@@ -1,0 +1,30 @@
+/* Header Componen */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-logo {
+    height: 50px;
+    width: 50px;
+    background-image: ;
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+}
+/* Header Componen */
+
+/* Navbar Componen */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-a {
+    border: 1px solid;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+}
+/* Navbar Componen */
