@@ -1,38 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Website - Nur Rahma</title>
-
-    <!----------Css External-->
-    <link rel="stylesheet" href="Tugas 4.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Nrrhmh</title>
+  <link rel="stylesheet" href="Project Revo U.css" />
 </head>
-
 <body>
-    <!----Header-->
-    <header style="main-header">
-        <!--Logo Webside-->
-        <div style="main-logo"></div>
-
-        <!---Navbar-->
-        <nav style="nav">
-            <a style="nav-a"href="#Home">Home</a>
-            <a style="nav-a"href="#OurProfile">Our Profile</a>
-            <a style="nav-a"href="#MassageUs">Massage Us</a>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="main-logo"></div>
+    <nav class="nav">
+      <a class="nav-a" href="#home">Home</a>
+      <a class="nav-a" href="#profile">Our Profile</a>
+      <a class="nav-a" href="#achievement">Achievement</a>
+      <a class="nav-a" href="#message">Message Us</a>
         </nav>
     </header>
 
-    <hr>
-    <!----Main-->
-    <main>
-        <section id="Home">
-            <h1></h1>
-            <p></p>
-        </section>
-    </main>
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <h1>Hi, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+    <div class="hero-image">[Gambar]</div>
+  </section>
 
-    <!----Footer-->
-    <footer></footer>
+  <!-- Our Facilitation -->
+  <section class="facilitation">
+    <h2>Our Facilitation</h2>
+    <div class="facility-container">
+      <div class="facility">
+        <div class="circle"></div>
+        <p>Professional Teacher</p>
+      </div>
+      <div class="facility">
+        <div class="circle"></div>
+        <p>Sport Field</p>
+      </div>
+      <div class="facility">
+        <div class="circle"></div>
+        <p>Classroom</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="message" class="message-section">
+    <h2>Message Us</h2>
+    <form id="messageForm">
+      <label>Name:<br>
+        <input type="text" id="name" required>
+      </label><br>
+      <label>Date of Birth:<br>
+        <input type="date" id="dob" required>
+      </label><br>
+      <label>Gender:<br>
+        <select id="gender" required>
+          <option value="">Select</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+      </label><br>
+      <label>Message:<br>
+        <textarea id="messageText" rows="4" required></textarea>
+      </label><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="output-box" id="outputBox">
+      <p>Current Time: <span id="currentTime"></span></p>
+      <p>Name: <span id="outputName"></span></p>
+      <p>Date of Birth: <span id="outputDob"></span></p>
+      <p>Gender: <span id="outputGender"></span></p>
+      <p>Message: <span id="outputMessage"></span></p>
+    </div>
+        </section>
+
+  <footer>
+    <p>Created@ by Ammah</p>
+  </footer>
+
+  <script src="Project Revo U.js"></script>
 </body>
 </html>
