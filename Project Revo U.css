@@ -1,98 +1,159 @@
+:root {
+  --yellow: #f1c40f;
+  --black: #222;
+  --white: #fff;
+  --gray: #eee;
+  --dark-gray: #444;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
-    background-color: #f0f0f0;
-  }
-  
-  .main-logo {
-    height: 50px;
-    width: 50px;
-    background-image: url('RevoULogo.png'); 
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .nav {
-    display: flex;
-    gap: 16px;
-  }
-  
-  .nav-a {
-    text-decoration: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: black;
-  }
-  
-  .nav-a:hover {
-    background-color: #ccc;
-  }
-  
-  .home {
-    padding: 32px;
-    text-align: center;
-  }
-  
-  .hero-image {
-    height: 200px;
-    background-color: #e0e0e0;
-    margin-top: 20px;
-  }
-  
-  .facilitation {
-    padding: 32px;
-    text-align: center;
-  }
-  
-  .facility-container {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin-top: 16px;
-  }
-  
-  .facility .circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 auto 8px;
-  }
-  
-  .message-section {
-    padding: 32px;
-    background-color: #f9f9f9;
-  }
-  
-  .message-section form {
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-  
-  .message-section label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .output-box {
-    border: 1px solid #ccc;
-    padding: 16px;
-    max-width: 300px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 16px;
-    background-color: #eee;
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: var(--black);
+  color: var(--yellow);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-logo {
+  height: 40px;
+  width: 40px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 5px var(--yellow);
+  background-image: url('RevoULogo.png'); 
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: var(--yellow);
+  padding: 6px 12px;
+  border: 1px solid var(--yellow);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-a:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.home {
+  padding: 48px;
+  text-align: center;
+  background-color: var(--gray);
+}
+
+.hero-image {
+  height: 200px;
+  background-color: var(--dark-gray);
+  color: white;
+  line-height: 200px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.facilitation {
+  padding: 48px;
+  text-align: center;
+}
+
+.facility-container {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 32px;
+}
+
+.facility .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  margin: 0 auto 8px;
+  box-shadow: 0 0 8px var(--dark-gray);
+}
+
+.message-section {
+  padding: 48px;
+  background-color: var(--gray);
+}
+
+.message-section h2 {
+  text-align: center;
+}
+
+.form-output-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+form {
+  background-color: var(--white);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: var(--black);
+  color: var(--yellow);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+form button:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.output-box {
+  background-color: var(--white);
+  border: 1px solid #ccc;
+  padding: 24px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+  background-color: var(--black);
+  color: var(--yellow);
+  margin-top: 32px;
+}
